@@ -14,7 +14,7 @@ function Home() {
           </p>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              About Us
+              <a href="#about" >About Us</a>
             </button>
             {/* <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">
               Button

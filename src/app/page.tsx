@@ -48,6 +48,8 @@ export default function Main() {
           <Home />
         </div>
 
+        <hr />
+
         {/* About */}
         <div id="about" style={pageStyles}>
           <About />
