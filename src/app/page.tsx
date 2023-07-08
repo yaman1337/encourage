@@ -13,7 +13,7 @@ import Home from "@/components/landing_page/Home";
 const inter = Inter({ subsets: ["latin"] });
 
 const pageStyles = {
-  minHeight: "80vh",
+  minHeight: "90vh",
   width: "100%",
   paddingLeft: "20px",
   paddingRight: "20px",
@@ -55,10 +55,14 @@ export default function Main() {
           <About />
         </div>
 
+        <hr />
+
         {/* Team */}
         <div id="team" style={pageStyles}>
           <Team />
         </div>
+
+        <hr />
 
         {/* Contact */}
         <div id="contact" style={pageStyles}>
