@@ -10,7 +10,7 @@ function Home() {
            ENCOURAGE
           </h1>
           <p className="mb-8 leading-relaxed">
-          Unlock the magical world of books! Join our interactive reading adventure and ignite a lifelong love for learning. Discover captivating stories, connect with fellow bookworms, and embark on a journey that will inspire young minds to explore, imagine, and fall in love with reading.
+          Hello everyone. ENCOURAGE is a group of fresh high school graduates. Our collective goal is to inspire young children through the world of books. We want the children who've grown up surrounded by gadgets to choose books to challenge their mind and imagination. 
           </p>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
