@@ -6,8 +6,8 @@ import Image from "next/image";
 
 function About() {
   return (
-    <div className="flex flex-col justify-center items-center pt-5">
-      <div className="title text-2xl font-bold">Our Goal</div>
+    <div className="flex flex-col justify-center items-center pt-5 pb-10">
+      <div className="title text-4xl">Our Goal</div>
 
       <div className="goals mt-20 w-3/4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">

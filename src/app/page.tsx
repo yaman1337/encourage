@@ -48,21 +48,18 @@ export default function Main() {
           <Home />
         </div>
 
-        <hr />
 
         {/* About */}
         <div id="about" style={pageStyles}>
           <About />
         </div>
 
-        <hr />
 
         {/* Team */}
         <div id="team" style={pageStyles}>
           <Team />
         </div>
 
-        <hr />
 
         {/* Contact */}
         <div id="contact" style={pageStyles}>

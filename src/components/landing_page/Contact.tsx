@@ -1,64 +1,73 @@
-import Head from "next/head";
+"use client";
+
+import { useState } from "react";
+
+interface IFormData {
+  senderName: string | "";
+  subject: string | "";
+  message: string | "";
+}
 
 const Contact = () => {
-  return (
-    <div className="flex flex-col justify-center items-center pt-5">
-      <div className="title text-2xl font-bold">
-        If you have any queries please send it to us.
-      </div>
+  const [formData, setFormData] = useState<IFormData>({
+    senderName: "",
+    subject: "",
+    message: "",
+  });
 
-      <div className="max-w-md mx-auto mt-20">
-        <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-          <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block text-gray-700 text-sm font-bold mb-2"
+  return (
+    <div className="w-full mt-10 px-10">
+      <h1 className="title text-4xl text-center">Contact Us</h1>
+
+      <div className="mt-10 grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
+        <div className="text-2xl col-span-1">
+          Let us know if you have any queries. If you want to be part of
+          Encourage team, you can write it contact us or directly mail us{" "}
+          <a href="mailto:yaman.sarabariya@gmail.com" className="text-blue-500">
+            here.
+          </a>
+        </div>
+
+        <div className="col-span-1 border border-t p-10 flex flex-col h-[400px] rounded-md w-full items-center">
+          <h1 className="title text-2xl text-center">Send your message !</h1>
+          <input
+            type="text"
+            placeholder="Your name."
+            className="input input-bordered w-[90%] mt-5"
+            value={formData.senderName}
+            onChange={(e) =>
+              setFormData((prev) => { return {...prev, senderName: e.target.value} })
+            }
+          />
+
+          <input
+            type="text"
+            placeholder="Message Subject."
+            className="input input-bordered w-[90%] mt-5"
+            value={formData.subject}
+            onChange={(e) =>
+              setFormData((prev) => { return {...prev, subject: e.target.value} })
+            }
+          />
+
+          <textarea
+            className="textarea textarea-bordered mt-5 w-[90%]"
+            placeholder="Your message"
+            value={formData.message}
+            onChange={(e) =>
+              setFormData((prev) => { return {...prev, message: e.target.value} })
+            }
+          ></textarea>
+
+          <button className="btn btn-primary mt-5 float-left">
+            {" "}
+            <a
+              href={`mailto:yaman.sarabariya@gmail.com?subject=${formData.subject}&body=${formData.message}`}
             >
-              Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              placeholder="Enter your name"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-gray-700 text-sm font-bold mb-2"
-            >
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Enter your email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              htmlFor="message"
-              className="block text-gray-700 text-sm font-bold mb-2"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              placeholder="Enter your message"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            ></textarea>
-          </div>
-          <div className="flex items-center justify-center">
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="button"
-            >
-              Send
-            </button>
-          </div>
-        </form>
+              Send Message
+            </a>{" "}
+          </button>
+        </div>
       </div>
     </div>
   );
