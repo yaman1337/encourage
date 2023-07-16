@@ -20,9 +20,9 @@ function Team() {
       <div className="title text-4xl">Meet Our Amazing Team</div>
 
       <div className="grid grid-cols-1 pb-10 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
-        {TeamData.map((item) => {
+        {TeamData.map((item, key) => {
           return (
-            <div className=" cursor-pointer shadow-lg rounded-lg p-6 flex flex-col justify-center items-center gap-5 hover:shadow-xl">
+            <div className=" cursor-pointer shadow-lg rounded-lg p-6 flex flex-col justify-center items-center gap-5 hover:shadow-xl" key={key}>
               <div className="w-40 h-40 flex items-center justify-center">
                 <Image
                   className="object-cover max-w-full max-h-full rounded-full"
