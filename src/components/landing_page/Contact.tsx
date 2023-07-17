@@ -16,10 +16,10 @@ const Contact = () => {
   });
 
   return (
-    <div className="w-full mt-10 px-10">
+    <div className="w-full mt-10 lg:px-10">
       <h1 className="title text-4xl text-center">Contact Us</h1>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
+      <div className="mt-10 grid gap-4 sm:grid-cols-1 sm:gap-0 lg:grid-cols-2">
         <div className="text-2xl col-span-1">
           Let us know if you have any queries. If you want to be part of
           Encourage team, you can write it contact us or directly mail us{" "}

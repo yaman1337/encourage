@@ -16,7 +16,7 @@ const TeamData: ITeamData[] = RawTeamData;
 
 function Team() {
   return (
-    <div className="flex flex-col justify-center items-center pt-5 px-10">
+    <div className="flex flex-col justify-center items-center pt-5 lg:px-10">
       <div className="title text-4xl">Meet Our Amazing Team</div>
 
       <div className="grid grid-cols-1 pb-10 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">

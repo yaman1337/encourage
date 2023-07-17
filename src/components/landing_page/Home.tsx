@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <section className="body-font px-20 grid sm: grid-cols-1 lg:grid-cols-2">
+    <section className="body-font grid sm:grid-cols-1 lg:px-20 lg:grid-cols-2">
       {/* left section */}
 
       <div className="flex flex-col h-full" >

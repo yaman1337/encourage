@@ -12,7 +12,7 @@
   {
     "name": "Ananya Dahal",
     "image": "/Ananya.jpg",
-    "description": "Hi people I am Ananya Dahal. Graduated +2 from Kathmandu Model College (KMC). My hobbies are exploring new things and dealing with kids."
+    "description": "Hi everyone. I recently graduated from Kathmandu Model College (KMC). I love kids and want to encourage them to read books and give kids opportunity to learn more things through books. "
   },
   {
     "name": "Prabesh Shrestha",
@@ -48,5 +48,10 @@
     "name": "Sachyam Dahal",
     "image": "/Sachyam.webp",
     "description": "Hello everyone! I recently completed my A levels from St. Xavier College. I love reading books. With encourage, I want to help other kids too fall in love with books."
+  },
+  {
+    "name": "Yaman Mandal",
+    "image": "/Yaman.webp",
+    "description": "I am an adventurous explorer with a heart for kindness, finds joy in discovering new horizons and selflessly lending a hand to those in need."
   }
 ]
