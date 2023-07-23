@@ -9,6 +9,7 @@ import About from "@/components/landing_page/About";
 import Team from "@/components/landing_page/Team";
 import Contact from "@/components/landing_page/Contact";
 import Home from "@/components/landing_page/Home";
+import Gallery from "@/components/landing_page/Gallery";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,6 +53,11 @@ export default function Main() {
         {/* About */}
         <div id="about" style={pageStyles}>
           <About />
+        </div>
+
+         {/* About */}
+         <div id="gallery" style={pageStyles}>
+          <Gallery />
         </div>
 
 

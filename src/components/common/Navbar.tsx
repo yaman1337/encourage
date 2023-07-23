@@ -2,18 +2,22 @@ const NavLinks = () => {
   return (
     <>
       <li>
-        <a href="#home">Home</a>
+        <a href="/#home">Home</a>
       </li>
 
       <li>
-        <a href="#about">About</a>
+        <a href="/#about">About</a>
       </li>
 
       <li>
-        <a href="#team">Team</a>
+        <a href="/#gallery">Gallery</a>
+      </li>
+
+      <li>
+        <a href="/#team">Team</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="/#contact">Contact</a>
       </li>
     </>
   );
@@ -30,7 +34,7 @@ export default function Navbar({
     <div
       className="navbar bg-base-100  sticky top-0"
       style={{
-        width: "90%",
+        width: "100%",
         margin: "auto",
         borderBottom: "1px solid lightgray",
       }}
