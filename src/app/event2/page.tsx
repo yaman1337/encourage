@@ -57,7 +57,7 @@ export default function Main() {
         <div style={pageStyles}>
 
         <h1 className="w-full text-center text-3xl font-bold py-5" >
-        Sharada Academy Visit
+        Bijeshwori School Visit
         </h1>
 
           <div className="carousel w-full">
